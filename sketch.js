@@ -21,9 +21,6 @@ function setup(){
   //createCanvas(windowWidth * 0.99, windowHeight * 0.973);
   createCanvas(windowWidth-50, windowHeight-25);
   ship = new Ship();
-  for (var i=0; i<15; i++){
-    asteroids.push(new Asteroid());
-  }
 
   socket = io.connect('http://192.168.0.7:3000');
   var data = {
